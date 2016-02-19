@@ -32,6 +32,7 @@
         <Button android:id="@+id/pauseButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:enabled="false"
                 android:text="@string/pauseButtonLabel"/>
 
     </LinearLayout>
@@ -46,6 +47,7 @@
         <Button android:id="@+id/resetButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:enabled="false"
                 android:text="@string/resetButtonLabel"/>
 
         <Button android:id="@+id/quitButton"
@@ -58,9 +60,60 @@
     <CheckBox android:id="@+id/endCallBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="End Call On CountDown End"
+        android:text="@string/endCallBoxLabel"
         android:layout_below="@+id/linear2"
         android:layout_centerHorizontal="true"
         android:checked="true"/>
+
+    <TextView android:id="@+id/quitTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:textSize="30sp"
+              android:layout_below="@+id/endCallBox"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true">
+
+        <TextView android:id="@+id/hourTextView"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="15sp"
+                  android:text="@string/Hours"
+                  android:layout_marginLeft="10dp"/>
+
+        <NumberPicker android:id="@+id/numberPickerHour"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/hourTextView"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <TextView android:id="@+id/minuteTextView"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="15sp"
+                  android:text="@string/Minutes"
+                  android:layout_alignParentTop="true"
+                  android:layout_alignLeft="@+id/numberPickerMinute"
+                  android:layout_alignStart="@+id/numberPickerMinute"
+                  android:layout_marginLeft="5dp"/>
+
+        <NumberPicker android:id="@+id/numberPickerMinute"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                      android:layout_below="@+id/minuteTextView"
+                      android:layout_alignParentRight="true"
+                      android:layout_alignParentEnd="true"/>
+
+
+    </RelativeLayout>
 
 </RelativeLayout>

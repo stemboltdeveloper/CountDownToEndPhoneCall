@@ -1,9 +1,16 @@
 <resources>
-    <string name="app_name">CountDown To End Phone Call</string>
+    <string name="app_name">Count Down To End Phone Call</string>
     <string name="action_settings">Settings</string>
+    <string name="insult">Program me to do something or shut up.</string>
     <string name="countDownTextLabel">Countdown Not Set</string>
     <string name="startButtonLabel">Start</string>
     <string name="pauseButtonLabel">Pause</string>
     <string name="resetButtonLabel">Reset</string>
     <string name="quitButtonLabel">Quit</string>
+    <string name="quitText">This program will now end. Good bye.</string>
+    <string name="endCallBoxLabel">End Call</string>
+    <string name="checkBoxEndCalls">Phone calls will be ended</string>
+    <string name="checkBoxNotEndCalls">Phone calls will be not be ended</string>
+    <string name="Hours">Hours</string>
+    <string name="Minutes">Minutes</string>
 </resources>
