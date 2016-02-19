@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.stembo.android.countdowntoendphonecall.CountDownActivity"
+    tools:showIn="@layout/activity_count_down">
+
+    <TextView android:id="@+id/countDownTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:text="@string/countDownTextLabel"/>
+
+    <LinearLayout android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/countDownTextView">
+
+        <Button android:id="@+id/startButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:text="@string/startButtonLabel"/>
+
+        <Button android:id="@+id/pauseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pauseButtonLabel"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/linear1">
+
+        <Button android:id="@+id/resetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resetButtonLabel"/>
+
+        <Button android:id="@+id/quitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quitButtonLabel"/>
+
+    </LinearLayout>
+
+    <CheckBox android:id="@+id/endCallBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Call On CountDown End"
+        android:layout_below="@+id/linear2"
+        android:layout_centerHorizontal="true"
+        android:checked="true"/>
+
+</RelativeLayout>
